@@ -13,6 +13,8 @@
 		F7EEFAFE27272FF400277C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EEFAFC27272FF400277C16 /* Main.storyboard */; };
 		F7EEFB0027272FF600277C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7EEFAFF27272FF600277C16 /* Assets.xcassets */; };
 		F7EEFB0327272FF600277C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EEFB0127272FF600277C16 /* LaunchScreen.storyboard */; };
+		F7EEFB0C2727308100277C16 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EEFB0B2727308100277C16 /* Service.swift */; };
+		F7EEFB0F2727309F00277C16 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EEFB0E2727309F00277C16 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F7EEFAFF27272FF600277C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7EEFB0227272FF600277C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7EEFB0427272FF600277C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7EEFB0B2727308100277C16 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F7EEFB0E2727309F00277C16 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		F7EEFAF527272FF400277C16 /* Binding-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F7EEFB0D2727309900277C16 /* Model */,
+				F7EEFB0A2727307500277C16 /* Service */,
 				F7EEFAF627272FF400277C16 /* AppDelegate.swift */,
 				F7EEFAF827272FF400277C16 /* SceneDelegate.swift */,
 				F7EEFAFA27272FF400277C16 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				F7EEFB0427272FF600277C16 /* Info.plist */,
 			);
 			path = "Binding-MVVM";
+			sourceTree = "<group>";
+		};
+		F7EEFB0A2727307500277C16 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F7EEFB0B2727308100277C16 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F7EEFB0D2727309900277C16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7EEFB0E2727309F00277C16 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EEFB0F2727309F00277C16 /* Model.swift in Sources */,
 				F7EEFAFB27272FF400277C16 /* ViewController.swift in Sources */,
+				F7EEFB0C2727308100277C16 /* Service.swift in Sources */,
 				F7EEFAF727272FF400277C16 /* AppDelegate.swift in Sources */,
 				F7EEFAF927272FF400277C16 /* SceneDelegate.swift in Sources */,
 			);
