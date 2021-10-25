@@ -60,11 +60,11 @@
 		F7EEFAF527272FF400277C16 /* Binding-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F7EEFB10272730DB00277C16 /* View */,
 				F7EEFB0D2727309900277C16 /* Model */,
 				F7EEFB0A2727307500277C16 /* Service */,
 				F7EEFAF627272FF400277C16 /* AppDelegate.swift */,
 				F7EEFAF827272FF400277C16 /* SceneDelegate.swift */,
-				F7EEFAFA27272FF400277C16 /* ViewController.swift */,
 				F7EEFAFC27272FF400277C16 /* Main.storyboard */,
 				F7EEFAFF27272FF600277C16 /* Assets.xcassets */,
 				F7EEFB0127272FF600277C16 /* LaunchScreen.storyboard */,
@@ -87,6 +87,14 @@
 				F7EEFB0E2727309F00277C16 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F7EEFB10272730DB00277C16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7EEFAFA27272FF400277C16 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
