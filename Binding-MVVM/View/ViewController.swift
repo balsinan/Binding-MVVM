@@ -21,8 +21,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
         setupTableView()
+        setupObserver()
         viewModel.fetchUser()
         
+    }
+    
+    fileprivate func setupObserver(){
+        viewModel.users.bind { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
     
     fileprivate func setupTableView(){
@@ -33,7 +42,6 @@ class ViewController: UIViewController {
     }
     
 }
-
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
